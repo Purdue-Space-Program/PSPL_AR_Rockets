@@ -9,20 +9,31 @@
       href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
     />
     <style>
+      body,
+      html {
+        background-color: #000000 !important;
+      }
+
       :root {
-        --background-color: #252526 !important;
+        --background-color: #000000 !important;
         --primary: #daaa00 !important;
         --primary-hover: #ddb945 !important;
-        --card-background-color: #555960 !important;
+        --border-radius: 0 !important;
+        --card-background-color: #252526 !important;
+        --card-sectionning-background-color: #daaa00 !important;
         --muted-border-color: #555960 !important;
       }
+
       h1 {
         margin-bottom: 0;
       }
 
-      button {
-        margin-bottom: 0;
-        padding: 0.5rem;
+      article {
+        margin: 0.5rem;
+      }
+
+      header {
+        padding: 1rem !important;
       }
     </style>
   </head>
@@ -33,13 +44,27 @@
     <section class="container">
       <div class="grid">
         <article>
+          <header>Boomie Zoomie B</header>
           <a rel="ar" href="/assets/models/BZB.usdz">
             <img src="/assets/thumbs/BZB.png" />
           </a>
         </article>
         <article>
+          <header>CraterMaker Special</header>
           <a rel="ar" href="/assets/models/CMS.usdz">
             <img src="/assets/thumbs/CMS.png" />
+          </a>
+        </article>
+        <article>
+          <header>BZB + CMS Horizontal</header>
+          <a rel="ar" href="/assets/models/BZB CMS Horizontal.reality">
+            <img src="/assets/thumbs/BZB CMS Horizontal.png" />
+          </a>
+        </article>
+        <article>
+          <header>BZB + CMS Vertical</header>
+          <a rel="ar" href="/assets/models/BZB CMS Vertical.reality">
+            <img src="/assets/thumbs/BZB CMS Vertical.png" />
           </a>
         </article>
       </div>
