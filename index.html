@@ -4,79 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
     <title>PSP Liquids AR Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
     />
-    <style>
-      body,
-      html {
-        background-color: #000000 !important;
-      }
-
-      :root {
-        --background-color: #000000 !important;
-        --primary: #daaa00 !important;
-        --primary-hover: #ddb945 !important;
-        --border-radius: 0 !important;
-        --card-background-color: #252526 !important;
-        --card-sectionning-background-color: #daaa00 !important;
-        --muted-border-color: #555960 !important;
-      }
-
-      html {
-        color: white !important;
-        /* font-weight: bold; */
-      }
-
-      h1 {
-        margin-bottom: 0;
-      }
-
-      article {
-        margin: 0.5rem;
-      }
-
-      header {
-        padding: 1rem !important;
-      }
-
-      /* article > header {
-        font-size: 1.5rem !important;
-      } */
-    </style>
+    <link href="./output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
-    <header class="container">
-      <h1>PSP Liquids AR Gallery</h1>
-    </header>
-    <section class="container">
-      <div class="grid">
-        <article>
-          <header>Boomie Zoomie B</header>
-          <a rel="ar" href="assets/models/BZB.usdz">
-            <img src="assets/thumbs/BZB.png" />
-          </a>
-        </article>
-        <article>
-          <header>CraterMaker Special</header>
-          <a rel="ar" href="assets/models/CMS.usdz">
-            <img src="assets/thumbs/CMS.png" />
-          </a>
-        </article>
-        <article>
-          <header>BZB + CMS Horizontal</header>
-          <a rel="ar" href="assets/models/BZB CMS Horizontal.reality">
-            <img src="assets/thumbs/BZB CMS Horizontal.png" />
-          </a>
-        </article>
-        <article>
-          <header>BZB + CMS Vertical</header>
-          <a rel="ar" href="assets/models/BZB CMS Vertical.reality">
-            <img src="assets/thumbs/BZB CMS Vertical.png" />
-          </a>
-        </article>
-      </div>
-    </section>
+  <body class="bg-stone-900 text-white p-4 mx-2">
+    <h1 class="text-4xl font-title font-bold text-center mb-6">
+      Liquids Rocket Garden
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <article>
+        <header>Boomie Zoomie B</header>
+        <a rel="ar" href="assets/models/BZB.usdz">
+          <img src="assets/thumbs/BZB.png" />
+        </a>
+      </article>
+      <article>
+        <header>CraterMaker Special</header>
+        <a rel="ar" href="assets/models/CMS.usdz">
+          <img src="assets/thumbs/CMS.png" />
+        </a>
+      </article>
+      <article>
+        <header>BZB + CMS Horizontal</header>
+        <a rel="ar" href="assets/models/BZB CMS Horizontal.reality">
+          <img src="assets/thumbs/BZB CMS Horizontal.png" />
+        </a>
+      </article>
+      <article>
+        <header>BZB + CMS Vertical</header>
+        <a rel="ar" href="assets/models/BZB CMS Vertical.reality">
+          <img src="assets/thumbs/BZB CMS Vertical.png" />
+        </a>
+      </article>
+    </div>
   </body>
 </html>
